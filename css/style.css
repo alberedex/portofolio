@@ -53,7 +53,7 @@ a.active {
     align-items: center;
     padding: 100px;
     padding-bottom: 300px;
-    padding-top: 300px;
+    padding-top: 150px;
     animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
