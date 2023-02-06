@@ -6,15 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alberto Redondo Sanchez</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
 
     <!-- Estilos como iconos e animaciones CSS e propios -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -25,68 +20,39 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Offcanvas navbar large">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Alberto Redondo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+                aria-controls="offcanvasNavbar2">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#scrollspyHeading1">Sobre mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#scrollspyHeading2">Lenguajes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#scrollspyHeading3">Aprendizaje</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#scrollspyHeading4">Contacto</a>
-                    </li>
-                </ul>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
+                aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Alberto Redondo Sanchez</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" id="navbarNav">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#scrollspyHeading1">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyHeading2">Lenguajes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyHeading3">Aprendizaje</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyHeading4">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
-    <!-- <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary px-3 mb-3" id="navbar-example2">
-        <div class="container-fluid d-flex justify-content-between">
-            <a class="navbar-brand" href="#">Alberto Redondo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto mb-2 mb-lg-0 nav-pills">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#scrollspyHeading1">Sobre mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#scrollspyHeading2">Lenguajes</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false" href="#scrollspyHeading3">
-                            aprendizaje
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
 
     <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true">
         <div class="intro" id="scrollspyHeading1">
@@ -98,15 +64,13 @@
                 <p class="job">Desarrollador web</p>
             </div>
         </div>
-
-        <div class="lenguajes" id="scrollspyHeading2">
-            <div class="lenguajes__title_div" id="lenguajes__title_id">
-                <p class="lenguajes__title" data-aos="zoom-in-down">Lenguajes</p>
-                <p class="lenguajes__title" data-aos="zoom-in-down">Lenguajes</p>
-                <p class="lenguajes__title" data-aos="zoom-in-down">Lenguajes</p>
-                <p class="lenguajes__title" data-aos="zoom-in-down">Lenguajes</p>
-                <p class="lenguajes__title" data-aos="zoom-in-down">Lenguajes</p>
-                <p class="lenguajes__title" data-aos="zoom-in-down">Lenguajes</p>
+        <div class="lenguajes overflow-hidden" id="scrollspyHeading3">
+            <div class="lenguajes__title_div overflow-x-hidden text-white" id="lenguajes__title_id">
+                <p class="lenguajes__title" data-aos="zoom-in-down">Experiencia</p>
+            </div>
+        </div>
+        <div class="lenguajes overflow-hidden" id="scrollspyHeading2">
+            <div class="lenguajes__title_div text-white" id="lenguajes__title_id">
                 <p class="lenguajes__title" data-aos="zoom-in-down">Lenguajes</p>
             </div>
             <!--HTML CSS JS PHP MySQL-->
@@ -139,18 +103,12 @@
             </div>
         </div>
 
-        <div class="lenguajes" id="scrollspyHeading3">
-            <div class="lenguajes__title_div">
-                <p class="lenguajes__title" data-aos="zoom-in-down">Aprendiendo lenguajes</p>
-                <p class="lenguajes__title" data-aos="zoom-in-down">Aprendiendo lenguajes</p>
-                <p class="lenguajes__title" data-aos="zoom-in-down">Aprendiendo lenguajes</p>
-                <p class="lenguajes__title" data-aos="zoom-in-down">Aprendiendo lenguajes</p>
-                <p class="lenguajes__title" data-aos="zoom-in-down">Aprendiendo lenguajes</p>
-                <p class="lenguajes__title" data-aos="zoom-in-down">Aprendiendo lenguajes</p>
-                <p class="lenguajes__title" data-aos="zoom-in-down">Aprendiendo lenguajes</p>
+        <div class="lenguajes overflow-hidden" id="scrollspyHeading3">
+            <div class="lenguajes__title_div overflow-x-hidden text-white" id="lenguajes__title_id">
+                <p class="lenguajes__title" data-aos="zoom-in-down">Explorando</p>
             </div>
             <!-- REACT NODE.JS KOTLIN -->
-            <div>
+            <div id="types__lenguajes">
                 <div>
                     <img data-aos="fade-right" src="./img/React.png" alt="">
                     <div class="info">React</div>
@@ -167,7 +125,7 @@
         </div>
     </main>
 
-    <div class="container" id="scrollspyHeading4">
+    <div class="container text-white" id="scrollspyHeading4">
         <footer class="py-5">
             <!-- <div class="row">
                 <div class="col-6 col-md-2 mb-3">
@@ -218,11 +176,16 @@
                     <script>document.write(new Date().getFullYear());</script> Alberto Redondo Sanchez.
                 </p>
                 <ul class="list-unstyled d-flex">
-                    <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-github"></i></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-twitter fa-inverse"></i></a>
+                    </li>
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-instagram fa-inverse"></i></a>
+                    </li>
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-facebook fa-inverse"></i></a>
+                    </li>
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-github fa-inverse"></i></a>
+                    </li>
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-linkedin fa-inverse"></i></a>
+                    </li>
                 </ul>
             </div>
         </footer>

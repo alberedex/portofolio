@@ -11,11 +11,11 @@
 }
 
 *::-webkit-scrollbar {
-    width: 12px;
+    width: 8px;
 }
 
 *::-webkit-scrollbar-track {
-    background: #d4d4d4;
+    background: #a85adc67;
 }
 
 *::-webkit-scrollbar-thumb {
@@ -25,7 +25,8 @@
 }
 
 body {
-    background-color: #F3FAE1;
+    /* background-color: #F3FAE1; */
+    background-color: #0D0106;
 }
 
 nav {
@@ -218,6 +219,7 @@ a.active {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
+    gap: 70px;
 }
 
 .lenguajes__title {
@@ -225,15 +227,18 @@ a.active {
     font-weight: 800;
     font-size: 50px;
     animation: translating 5s linear infinite;
+    margin: 0;
+    padding-left: 40px;
 }
 
 @keyframes translating {
     0% {
-        transform: translate(0, 0);
+        transform: translateX(0);
     }
-
+    
     100% {
-        transform: translate(235px, 0);
+        /* transform: translate(235px, 0); */
+        transform: translateX(-100%);
     }
 }
 
@@ -243,7 +248,7 @@ a.active {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    gap: 70px;
+    /* gap: 70px; */
 }
 
 .lenguajes>div>div {
@@ -277,4 +282,15 @@ a.active {
     justify-content: center;
     align-items: center;
     transition-duration: 0.5s;
+}
+
+#lenguajes__title_id{
+    border-bottom: 1px solid #EC9DED;
+    border-top: 1px solid #EC9DED;
+    margin-bottom: 30px;
+}
+
+#offcanvasNavbar2{
+    width: 100%!important;
+    text-align: center;
 }
