@@ -2,13 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
 
-/* Works on Firefox */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* scroll */
 * {
     scrollbar-width: thin;
     scrollbar-color: #A85ADC #F3FAE1;
 }
 
-/* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
     width: 12px;
 }
@@ -205,22 +206,40 @@ a.active {
     padding: 50px;
 }
 
+.lenguajes>div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+}
+
 .lenguajes__title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Bebas Neue', cursive;
     font-weight: 800;
     font-size: 50px;
+    animation: translating 5s linear infinite;
+}
+
+@keyframes translating {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(235px, 0);
+    }
 }
 
 .lenguajes>div {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     gap: 70px;
 }
 
-.lenguajes>div>div{
+.lenguajes>div>div {
     position: relative;
 }
 
@@ -244,7 +263,7 @@ a.active {
     transition-duration: 0.5s;
 }
 
-.lenguajes div>div:hover .info{
+.lenguajes div>div:hover .info {
     display: block;
     transition-duration: 0.5s;
 }
