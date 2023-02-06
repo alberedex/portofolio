@@ -15,6 +15,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
+
+    <!-- Estilos como iconos e animaciones CSS e propios -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,8 +25,32 @@
 </head>
 
 <body>
-
-    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary px-3 mb-3" id="navbar-example2">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Alberto Redondo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#scrollspyHeading1">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading2">Lenguajes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading3">Aprendizaje</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading4">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary px-3 mb-3" id="navbar-example2">
         <div class="container-fluid d-flex justify-content-between">
             <a class="navbar-brand" href="#">Alberto Redondo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -45,14 +71,14 @@
                             aria-expanded="false" href="#scrollspyHeading3">
                             aprendizaje
                         </a>
-                        <!-- <ul class="dropdown-menu">
+                        <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul> -->
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contacto</a>
@@ -60,7 +86,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true">
         <div class="intro" id="scrollspyHeading1">
@@ -125,7 +151,7 @@
         </div>
     </main>
 
-    <div class="container">
+    <div class="container" id="scrollspyHeading4">
         <footer class="py-5">
             <!-- <div class="row">
                 <div class="col-6 col-md-2 mb-3">
