@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alberto Redondo Sanchez</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary px-3 mb-3" id="navbar-example2">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand" href="#">Alberto Redondo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0 nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#scrollspyHeading1">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading2">Lenguajes</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" href="#scrollspyHeading3">
+                            aprendizaje
+                        </a>
+                        <!-- <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true">
+        <div class="intro" id="scrollspyHeading1">
+            <div class="div__image">
+                <img class="imagen__avatar" src="./img/alberto.jpg" alt="">
+            </div>
+            <div class="div__title">
+                <p class="title">Alberto Redondo</p>
+                <p class="job">Desarrollador web</p>
+            </div>
+        </div>
+
+        <div class="lenguajes" id="scrollspyHeading2">
+            <p class="lenguajes__title" data-aos="zoom-in-down">Lenguajes</p>
+            <!--HTML CSS JS PHP MySQL-->
+            <div>
+                <div>
+                    <img data-aos="fade-right" src="./img/HTML5.png" alt="">
+                    <div class="info">HTML</div>
+                </div>
+                <div>
+                    <img data-aos="fade-right" src="./img/CSS3.png" alt="">
+                    <div class="info">CSS</div>
+
+                </div>
+                <div>
+                    <img data-aos="fade-right" src="./img/JavaScript.png" alt="">
+                    <div class="info">JS</div>
+                </div>
+                <div>
+                    <img data-aos="fade-right" src="./img/MySQL.png" alt="">
+                    <div class="info">MySQL</div>
+                </div>
+                <div>
+                    <img data-aos="fade-right" src="./img/PHP.png" alt="">
+                    <div class="info">PHP</div>
+                </div>
+                <div>
+                    <img data-aos="fade-right" src="./img/git.png" alt="">
+                    <div class="info">GIT</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lenguajes" id="scrollspyHeading3">
+            <p class="lenguajes__title" data-aos="zoom-in-down">Aprendiendo lenguajes</p>
+            <!-- REACT NODE.JS KOTLIN -->
+            <div>
+                <div>
+                    <img data-aos="fade-right" src="./img/React.png" alt="">
+                    <div class="info">React</div>
+                </div>
+                <div>
+                    <img data-aos="fade-right" src="./img/Node.js.png" alt="">
+                    <div class="info">Node.js</div>
+                </div>
+                <div>
+                    <img data-aos="fade-right" src="./img/kotlin.png" alt="">
+                    <div class="info">Kotlin</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="container">
+        <footer class="py-5">
+            <!-- <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Sección</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Inicio</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Características</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Precios</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Acerca</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Sección</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Inicio</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Características</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Precios</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Acerca</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Sección</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Inicio</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Características</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Precios</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Acerca</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Suscríbete</h5>
+                        <p>Resumen.</p>
+                        <div class="d-flex justify-content-around">
+                            <label for="newsletter1" class="w-50 align-items-center">E-mail</label>
+                            <input id="newsletter1" type="text" class="form-control flex-fill"
+                                placeholder="Email address">
+                            <button class="btn btn-primary flex-fill" type="button">Suscribirme</button>
+                        </div>
+                    </form>
+                </div>
+            </div> -->
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>&copy;
+                    <script>document.write(new Date().getFullYear());</script> Alberto Redondo Sanchez.
+                </p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-github"></i></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
