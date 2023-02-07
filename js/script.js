@@ -10,3 +10,7 @@ Array.from(classs).forEach(element => {
         element.appendChild(newChild);
     }
 });
+
+$("#offcanvasNavbar2 a").click(function(){
+    $('.offcanvas').offcanvas('hide');
+});
