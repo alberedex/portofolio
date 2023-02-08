@@ -20,30 +20,31 @@
 </head>
 
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-black" aria-label="Offcanvas navbar large">
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top sticky-sm-top bg-black"
+        aria-label="Offcanvas navbar large">
         <div class="container-fluid">
             <a class="navbar-brand" id="div_top" href="#">ALBERTO REDONDO SANCHEZ - PORTOFOLIO</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
                 aria-controls="offcanvasNavbar2">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-top text-bg-dark bg-black" tabindex="-1" id="offcanvasNavbar2"
+            <div class="offcanvas offcanvas-top offcanvas-lg text-bg-dark bg-black" tabindex="-1" id="offcanvasNavbar2"
                 aria-labelledby="offcanvasNavbar2Label">
                 <div class="offcanvas-header">
                     <div class="lenguajes overflow-hidden sticky-top" id="div_top">
                         <div class="lenguajes__title_div overflow-x-hidden text-white" id="lenguajes__title_id">
-                            <p class="lenguajes__title" id="div_top">&nbsp;ALBERTO REDONDO SANCHEZ - PORTOFOLIO &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;</p>
+                            <p class="lenguajes__title" id="div_top">&nbsp;ALBERTO REDONDO SANCHEZ - PORTOFOLIO
+                                &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;</p>
                         </div>
                     </div>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body" id="navbarNav">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        
+                <div class="offcanvas-body " id="navbarNav">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#scrollspyHeading1">Sobre mí</a>
+                            <a class="nav-link" aria-current="page" href="#scrollspyHeading1">Sobre mí</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#scrollspyHeadingExp">Experencia</a>
@@ -57,16 +58,21 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#scrollspyHeading4">Contacto</a>
                         </li>
+                        <li class="nav-item">
+                            <div class="form-check form-switch">
+                                <i class="fa-solid"></i>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
-    
+
 
     <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true">
-        
-        
+
+
         <div class="intro" id="scrollspyHeading1">
             <div class="div__image">
                 <img class="imagen__avatar" src="./img/alberto.jpg" alt="">
@@ -77,13 +83,28 @@
             </div>
         </div>
         <div class="lenguajes overflow-hidden" id="scrollspyHeadingExp">
-            <div class="lenguajes__title_div overflow-x-hidden text-white" id="lenguajes__title_id">
-                <p class="lenguajes__title" data-aos="zoom-in-down">Experiencia</p>
+            <div class="lenguajes__title_div overflow-x-hidden text-white" id="lenguajes__title_id"
+                data-aos="zoom-in-down">
+                <p class="lenguajes__title">Experiencia</p>
+            </div>
+            <div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
             </div>
         </div>
         <div class="lenguajes overflow-hidden" id="scrollspyHeading2">
-            <div class="lenguajes__title_div text-white" id="lenguajes__title_id">
-                <p class="lenguajes__title" data-aos="zoom-in-down">Lenguajes</p>
+            <div class="lenguajes__title_div text-white" id="lenguajes__title_id" data-aos="zoom-in-down">
+                <p class="lenguajes__title">Lenguajes</p>
             </div>
             <!--HTML CSS JS PHP MySQL-->
             <div id="types__lenguajes">
@@ -116,8 +137,9 @@
         </div>
 
         <div class="lenguajes overflow-hidden" id="scrollspyHeading3">
-            <div class="lenguajes__title_div overflow-x-hidden text-white" id="lenguajes__title_id">
-                <p class="lenguajes__title" data-aos="zoom-in-down">Explorando nuevos lenguajes</p>
+            <div class="lenguajes__title_div overflow-x-hidden text-white" id="lenguajes__title_id"
+                data-aos="zoom-in-down">
+                <p class="lenguajes__title">Explorando nuevos lenguajes</p>
             </div>
             <!-- REACT NODE.JS KOTLIN -->
             <div id="types__lenguajes">
@@ -206,10 +228,8 @@
     <script>
         AOS.init();
     </script>
-    <script
-    src="https://code.jquery.com/jquery-3.6.3.slim.js"
-    integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.js"
+        integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
 </body>
 
