@@ -285,8 +285,8 @@ a:active {
     font-family: 'Bebas Neue', cursive;
     text-align: center;
     font-size: 50px;
+    /* filter: drop-shadow(20px 2px 15px rgba(0, 0, 0, 0.7)); */
 
-    transition-duration: 0.5s;
 }
 
 .lenguajes div>div:hover .info {
@@ -294,7 +294,6 @@ a:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-duration: 0.5s;
 }
 
 #lenguajes__title_id {
